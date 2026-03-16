@@ -1,0 +1,212 @@
+body{
+    margin:0;
+}
+
+/* logo */
+
+.logo{
+    width:300px;
+    max-width:100%;
+}
+
+/* header */
+
+.header-base{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 50px;
+    background-color:rgb(225,34,98);
+}
+
+.links a{
+    color:white;
+    padding:5px 20px;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.links a:hover{
+    background-color:rgba(131,16,54,0.587);
+    border-radius:15px;
+}
+
+/* intro */
+
+.im-p{
+    margin:0;
+    padding:10px 15px;
+    background-color:rgb(225,34,98);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:0 0 50px 50px;
+}
+
+.im-p p{
+    font-size:25px;
+    padding:15px;
+    color:rgb(224,190,226);
+}
+
+/* doctor */
+
+.dr-photo{
+    width:150px;
+    border-radius:100px;
+}
+
+/* sections in middle */
+
+.pictures,
+.part-two,
+.part-three{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin:20px;
+}
+
+/* images */
+
+.pictures img,
+.part-two img,
+.part-three img{
+    margin:9px;
+    width:350px;
+    height:300px;
+    border-radius:20px;
+    max-width:100%;
+}
+
+/* text beside images */
+
+.pictures h3,
+.part-two h3,
+.part-three h3{
+    font-size:30px;
+    margin:0 15px;
+}
+
+/* titles */
+
+.transformation-h{
+    margin:70px 25px;
+    color:rgb(67,15,53);
+    font-style:oblique;
+    font-weight:900;
+}
+
+.health-care{
+    margin:70px 25px;
+    color:rgb(67,15,53);
+    font-style:oblique;
+    font-weight:900;
+}
+
+/* products section */
+
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background-color:aquamarine;
+    padding:10px;
+}
+
+.product-1{
+    border-radius:20px 20px 0 0;
+}
+
+.product-6{
+    border-radius:0 0 20px 20px;
+}
+
+.product-1 img,
+.product-2 img,
+.product-3 img,
+.product-4 img,
+.product-5 img,
+.product-6 img{
+    margin:9px;
+    width:350px;
+    height:300px;
+    border-radius:20px;
+    max-width:100%;
+}
+
+.product-1 p,
+.product-2 p,
+.product-3 p,
+.product-4 p,
+.product-5 p,
+.product-6 p{
+    font-size:30px;
+    font-style:oblique;
+    font-weight:bolder;
+    color:rgb(158,39,79);
+}
+
+/* conclusion */
+
+.conclusion p{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    margin:70px 25px;
+    font-weight:400;
+    font-style:oblique;
+    color:brown;
+}
+
+/* responsive */
+
+@media (max-width:768px){
+
+.header-base{
+    flex-direction:column;
+    text-align:center;
+}
+
+.links{
+    margin-top:10px;
+}
+
+.pictures,
+.part-two,
+.part-three,
+.product-1,
+.product-2,
+.product-3,
+.product-4,
+.product-5,
+.product-6{
+    flex-direction:column;
+    text-align:center;
+}
+
+.pictures img,
+.part-two img,
+.part-three img,
+.product-1 img,
+.product-2 img,
+.product-3 img,
+.product-4 img,
+.product-5 img,
+.product-6 img{
+    width:90%;
+    height:auto;
+}
+
+.conclusion p{
+    font-size:30px;
+    text-align:center;
+}
+
+}
